@@ -1,0 +1,12 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: support-maintenance-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartgn_support_db
+smartgn:
+  security:
+    jwt-enabled: true
+  broker:
+    protocol: MQTT 5.0 over TLS

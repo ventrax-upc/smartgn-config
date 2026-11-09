@@ -1,0 +1,7 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: installation-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartgn_installation_db
