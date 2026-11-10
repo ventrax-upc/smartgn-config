@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: iam-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartgn_iam_db
+smartgn:
+  security:
+    jwt-expiration-ms: 3600000
