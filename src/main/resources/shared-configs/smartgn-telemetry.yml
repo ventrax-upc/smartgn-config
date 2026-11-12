@@ -1,0 +1,5 @@
+ASPNETCORE_URLS: http://+:8085
+MQTT_URL: tcp://emqx:1883
+INSTALLATION_BASE_URL: http://installation:8081
+ALERTING_EVENTS_SINK_URL: http://alerting:8086/internal/v1/telemetry-events
+INFLUX_URL: http://influxdb:8086

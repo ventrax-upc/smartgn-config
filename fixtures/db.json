@@ -1,0 +1,22 @@
+{
+  "service": "smartgn-config",
+  "version": 1,
+  "records": [
+    {
+      "alias": "demo-config-profile",
+      "profile": "local",
+      "applications": [
+        "smartgn-iam-service",
+        "smartgn-installation-device-management",
+        "support-maintenance-service",
+        "smartgn-payments-billing",
+        "alerting-notifications-service",
+        "smartgn-admin",
+        "smartgn-message-broker",
+        "smartgn-telemetry",
+        "smartgn-monitoring",
+        "api-gateway"
+      ]
+    }
+  ]
+}

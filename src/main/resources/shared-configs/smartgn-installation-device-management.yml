@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/installation_db
+smartgn:
+  telemetry:
+    base-url: http://telemetry:8085
+  broker:
+    base-url: http://emqx:18083/api/v5

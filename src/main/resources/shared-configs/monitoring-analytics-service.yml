@@ -1,0 +1,6 @@
+server:
+  port: ${PORT:8084}
+integration:
+  iam-base-url: ${IAM_BASE_URL:http://iam:8080}
+  telemetry-grpc-address: ${TELEMETRY_GRPC_ADDRESS:telemetry:9084}
+  billing-grpc-address: ${BILLING_GRPC_ADDRESS:billing:9083}
