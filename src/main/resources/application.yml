@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8088
 
 spring:
   application:
@@ -9,18 +9,25 @@ spring:
   cloud:
     config:
       server:
+        accept-empty: false
         native:
           search-locations: classpath:/shared-configs
   boot:
     admin:
       client:
-        url: http://localhost:8085
+        url: ${SMARTGN_ADMIN_URL:http://localhost:8089}
+        username: ${SMARTGN_ADMIN_USERNAME:admin}
+        password: ${SMARTGN_ADMIN_PASSWORD:local-admin-password}
+        instance:
+          service-url: ${ADMIN_SERVICE_URL:http://localhost:8088}
+          management-url: ${ADMIN_MANAGEMENT_URL:http://localhost:8088/actuator}
+          health-url: ${ADMIN_HEALTH_URL:http://localhost:8088/actuator/health}
 
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health,info
   endpoint:
     health:
       show-details: always

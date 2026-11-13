@@ -1,0 +1,11 @@
+server:
+  port: 8000
+smartgn:
+  gateway:
+    iam-url: http://iam:8080
+    installation-url: http://installation:8081
+    support-url: http://support:8082
+    billing-url: http://billing:8083
+    monitoring-url: http://monitoring:8084
+    alerting-url: http://alerting:8086
+    admin-url: http://admin:8089

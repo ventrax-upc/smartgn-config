@@ -1,0 +1,10 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/smartgn_alerting_db?currentSchema=alerting
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

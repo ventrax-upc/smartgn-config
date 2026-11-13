@@ -1,0 +1,5 @@
+GrpcServers:
+  Telemetry: http://telemetry:9084
+  Billing: http://billing:9083
+Integration:
+  IamBaseUrl: http://iam:8080

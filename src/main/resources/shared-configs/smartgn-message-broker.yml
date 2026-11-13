@@ -1,0 +1,10 @@
+server:
+  port: 8087
+mqtt:
+  broker:
+    host: emqx
+    port: 1883
+    username: broker-service
+    topic-prefix: smartgn/events/broker/
+emqx:
+  api-url: http://emqx:18083/api/v5

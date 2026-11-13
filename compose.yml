@@ -1,0 +1,12 @@
+name: smartgn-config
+services:
+  config:
+    build: .
+    ports: ["127.0.0.1:8088:8088"]
+    environment:
+      SERVER_PORT: 8088
+      SMARTGN_ADMIN_URL: ${SMARTGN_ADMIN_URL:-http://localhost:8089}
+      SMARTGN_ADMIN_USERNAME: ${SMARTGN_ADMIN_USERNAME:-admin}
+      SMARTGN_ADMIN_PASSWORD: ${SMARTGN_ADMIN_PASSWORD:-local-admin-password}
+    mem_limit: 384m
+    init: true
