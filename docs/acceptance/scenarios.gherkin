@@ -1,0 +1,7 @@
+# Derived from the AV4 integrated-local scope and the Gateway smoke assertions.
+Feature: Central configuration in the integrated stack
+
+  Scenario: Load the local configuration for a SmartGN consumer
+    Given Config Service is healthy and its native profile is available
+    When a SmartGN consumer requests its application configuration for the local profile
+    Then Config Service returns the application configuration with nonempty property sources
